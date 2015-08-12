@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="http://cdn.jsdelivr.net/interact.js/1.2.4/interact.min.js"></script>
+        <link rel="stylesheet" href="styles.css" type="text/css" >
+
+        <script type="text/html" id="template">
+            <div class="component-header component__dragable">NAME_NOT_SET</div>
+            <div class="component-body">
+                <iframe></iframe>
+            </div>
+        </script>
+    </head>
+    <body class="overflow__disabled">
+        <ul class="header">
+            <li class="menu">
+                <span class="menu-label">Web Sites</span>
+                <ul>
+                    <li data-iframe-src="http://avid.com">Avid.com</li>
+                    <li data-iframe-src="http://simcorp.com">SimCorp.com</li>
+                </ul>
+            </li>
+            <li class="menu">
+                <span class="menu-label">Applications</span>
+                <ul>
+                    <li>Platform Client</li>
+                    <li>ACS Monitor</li>
+                    <li>Service Manager</li>
+                    <li>Companion UI</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="wrapper"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

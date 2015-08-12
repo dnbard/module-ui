@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    background-color: gray;
+}
+
+.overflow__disabled {
+    overflow: hidden;
+}
+
+.component {
+    top: 19px;
+    width: 800px;
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    background: -webkit-linear-gradient(rgba(233, 233, 233, 1.0), rgba(178, 178, 178, 1.0) 21px, #EDEDED, #EDEDED 23px);
+    background: -moz-linear-gradient(rgba(233, 233, 233, 1.0), rgba(178, 178, 178, 1.0) 21px, #EDEDED, #EDEDED 23px);
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .6), 0 22px 30px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.component-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+.component-body {
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100% - 19px);
+    box-sizing: border-box;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 19px;
+
+    background: -webkit-linear-gradient(rgba(233, 233, 233, 1.0), rgba(178, 178, 178, 1.0) 21px, #EDEDED, #EDEDED 23px);
+    background: -moz-linear-gradient(rgba(233, 233, 233, 1.0), rgba(178, 178, 178, 1.0) 21px, #EDEDED, #EDEDED 23px);
+    z-index: 1000;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+
+.menu{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    vertical-align: top;
+    position: relative;
+}
+
+.menu ul{
+    display: none;
+    margin: 1px 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    min-width: 140px;
+}
+
+.menu .menu-label{
+    padding: 0 5px;
+}
+
+.menu:hover .menu-label{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
+    color: white;
+}
+
+.menu:hover ul{
+    display: block;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 5px 0 5px 20px;
+}
+
+.menu ul li:hover{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
+    color: white;
+}
